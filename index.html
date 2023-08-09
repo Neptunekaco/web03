@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex页面布局</title>
+    <style>
+        body
+        {
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        *{border: 1px solid black;}
+        .flex
+        {display: flex;}
+        .baise
+        {background-color: #eee(67, 112, 168);}
+        .flex1
+        {flex: 1;}
+        .column
+        {flex-direction: column;}
+
+    </style>
+</head>
+<body class="flex">
+<div style="width: 200px" class="baise"> </div>
+<div class="flex1 flex column">
+    <div style="height: 60px" class="baise"></div>
+    <div class="flex1 flex">
+        <div style="flex: 3" class="flex1 flex column">
+          
+            <div style="height: 60px" class="baise flex">
+                <div style="flex: 1;"></div>
+                <div style="flex: 1;"></div>
+                <div style="flex: 1;"></div>
+            </div>
+            
+            <div class=" flex1 flex">  
+                <div style="flex: 1;"></div>    
+                <div style="flex: 1;"></div>
+            </div>
+           
+                
+            
+        </div>
+        
+        <div style="flex: 1;"></div>
+    </div>
+</div>
+
+</body>  
+</html>
